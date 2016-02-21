@@ -1,0 +1,33 @@
+<!-- INCLUDE ucp_header.html -->
+<h2>{L_TITLE}</h2>
+<form id="ucp-gradient" method="post" action="{S_FORM_ACTION}"{S_FORM_ENCTYPE}>
+<div class="panel">
+	<p>{L_TITLE_EXPLAIN}</p>
+	<!-- IF ERROR --><p class="error">{ERROR}</p><!-- ENDIF -->
+	<div class="header">{L_UCP_GRADIENT_USER_PLACE}</div>
+
+	<!-- IF PREVIEW_USERNAME -->
+	<p class="bg1">{L_PREVIEW}{L_COLON} <strong>{PREVIEW_USERNAME}</strong></p>
+	<!-- ENDIF -->
+	<p class="bg2">{L_UCP_GRADIENT_USER_COLOURS} 1{L_COLON}<br />
+		<input name="colour" type="text" id="colour" value="{COLOUR}" size="6" maxlength="6" class="inputbox autowidth" />
+		<span style="background-color: #{COLOUR};">&nbsp;&nbsp;&nbsp;</span>
+	</p>
+	<p class="bg1">{L_UCP_GRADIENT_USER_COLOURS} 2{L_COLON}<br />
+		<input name="colour2" type="text" id="colour2" value="{COLOUR2}" size="6" maxlength="6" class="inputbox autowidth" />
+		<span style="background-color: #{COLOUR2};">&nbsp;&nbsp;&nbsp;</span>
+	</p>
+	<p class="bg2">{L_COLOUR_SWATCH}{L_COLON}<br /><span>{L_UCP_GRADIENT_USER_PASTE}</span><br />
+		<div id="color_palette_placeholder" data-orientation="h" data-height="12" data-width="15" data-target="#colour2"></div>
+	</p>
+</div>
+<div class="panel submit-buttons">
+		{S_HIDDEN_FIELDS}
+		<input type="reset" value="{L_RESET}" name="reset" class="button2" />&nbsp; 
+		<input type="submit" value="{L_PREVIEW}" name="preview" class="button1" />&nbsp; 
+		<input type="submit" name="submit" value="{L_SUBMIT}" class="button1" />
+		{S_FORM_TOKEN}
+</div>
+</form>
+<!-- Anvar (apwa.ru) && Site: http://bb3.mobi -->
+<!-- INCLUDE ucp_footer.html -->

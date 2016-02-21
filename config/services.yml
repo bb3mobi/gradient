@@ -1,0 +1,5 @@
+services:
+    bb3mobi.gradient.listener:
+        class: bb3mobi\gradient\event\listener
+        tags:
+            - { name: event.listener }

@@ -1,0 +1,25 @@
+{
+    "name": "bb3mobi/gradient",
+    "type": "phpbb-extension",
+    "description": "",
+    "homepage": "http://bb3.mobi",
+    "version": "1.0.0",
+    "time": "2016-02-21",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Anvar",
+            "homepage": "http://apwa.ru",
+            "role": "Developer to extension"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "extra": {
+        "display-name": "Gradient User Name",
+        "soft-require": {
+           "phpbb/phpbb": "3.1.*@dev"
+        }
+    }
+}
